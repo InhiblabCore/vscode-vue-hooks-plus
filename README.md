@@ -12,7 +12,7 @@
 `command` + `shift` + `p` 调出输入框，输入 `vue hooks plus` 进行操作。
 
 <p align="center">
-<img width="350" src="resources/preview1.png">
+<img width="350" src="image/preview1.png">
 </p>
 
 ## License
