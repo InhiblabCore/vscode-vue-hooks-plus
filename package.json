@@ -3,10 +3,10 @@
   "displayName": "VueHooks Plus",
   "description": "Browse VueHooks Plus resource in VS Code",
   "icon": "images/logo.png",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "vue-hooks-plus-view",
   "engines": {
-    "vscode": "^1.77.0"
+    "vscode": "^1.74.0"
   },
   "categories": [
     "Other"
