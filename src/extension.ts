@@ -15,17 +15,20 @@ export function activate(context: vscode.ExtensionContext) {
           return;
         }
         const config = vscode.workspace.getConfiguration();
-        config.update("vue-hooks-plus-view.iframe", newURL, true);
+        config.update("vscode-vue-hooks-plus.iframe", newURL, true);
         vscode.window.showInformationMessage(`update success!`);
       });
   };
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("vue-hooks-plus-view.updateURL", updateURL)
+    vscode.commands.registerCommand(
+      "vscode-vue-hooks-plus.updateURL",
+      updateURL
+    )
   );
 
   vscode.window.registerWebviewViewProvider(
-    "vue-hooks-plus-view.home",
+    "vscode-vue-hooks-plus.home",
     homeViewProvider
   );
 }

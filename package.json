@@ -1,10 +1,10 @@
 {
-  "name": "vue-hooks-plus-view",
+  "name": "vscode-vue-hooks-plus",
   "displayName": "VueHooks Plus",
   "description": "Browse VueHooks Plus resource in VS Code",
   "icon": "images/logo.png",
   "version": "1.0.2",
-  "publisher": "vue-hooks-plus-view",
+  "publisher": "vscode-vue-hooks-plus",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -15,14 +15,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/InhiblabCore/vscode-vue-hooks-plus-site.git"
+    "url": "https://github.com/InhiblabCore/vscode-vscode-vue-hooks-plus.git"
   },
   "main": "./out/extension.js",
   "contributes": {
     "configuration": {
 		  "title": "VueHooks Plus",
 		  "properties": {
-			  "vue-hooks-plus-view.iframe": {
+			  "vscode-vue-hooks-plus.iframe": {
 				  "type": "string",
 				  "default": "https://inhiblabcore.github.io/docs/hooks",
 				  "description": "Iframe URL"
@@ -31,23 +31,23 @@
     },
     "commands":[
       {
-        "command": "vue-hooks-plus-view.updateURL",
+        "command": "vscode-vue-hooks-plus.updateURL",
         "title": "VueHooks Plus: Update your Iframe URL"
       }
     ],
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "vue-hooks-plus-view",
+          "id": "vscode-vue-hooks-plus",
           "title": "VueHooks Plus",
           "icon": "images/logo.svg"
         }
       ]
     },
     "views": {
-      "vue-hooks-plus-view": [
+      "vscode-vue-hooks-plus": [
         {
-          "id": "vue-hooks-plus-view.home",
+          "id": "vscode-vue-hooks-plus.home",
           "type": "webview",
           "name": "v1.6.4"
         }

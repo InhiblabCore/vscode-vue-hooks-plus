@@ -24,7 +24,7 @@ export class HomeViewProvider implements vscode.WebviewViewProvider {
   ) {
     const config = vscode.workspace
       .getConfiguration()
-      .get("vue-hooks-plus-view.iframe");
+      .get("vscode-vue-hooks-plus.iframe");
 
     return `
       <!DOCTYPE html>
