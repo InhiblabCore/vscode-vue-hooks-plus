@@ -35,7 +35,7 @@ export class HomeViewProvider implements vscode.WebviewViewProvider {
           <title>VueHooks Plus View</title>
         </head>
         <body>
-          <iframe style="width:100%;height:100vh;border:0" src="${config}"></iframe>
+          <iframe style="width:100%;height:100vh;border:0" src="${config}" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
         </body>
       </html>
     `;

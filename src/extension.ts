@@ -20,11 +20,22 @@ export function activate(context: vscode.ExtensionContext) {
       });
   };
 
+  const resetConfig = () => {
+    const config = vscode.workspace.getConfiguration();
+    config.update(
+      "vscode-vue-hooks-plus.iframe",
+      "https://inhiblabcore.github.io/docs/hooks",
+      true
+    );
+    vscode.window.showInformationMessage(`please reload window`);
+  };
+
   context.subscriptions.push(
     vscode.commands.registerCommand(
       "vscode-vue-hooks-plus.updateURL",
       updateURL
-    )
+    ),
+    vscode.commands.registerCommand("vscode-vue-hooks-plus.reset", resetConfig)
   );
 
   vscode.window.registerWebviewViewProvider(
